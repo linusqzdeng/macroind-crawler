@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<title>2014年1-4季度我国GDP（国内生产总值）初步核算情况</title>
+<link href="../../../images/style.css" rel="stylesheet" type="text/css" />
+<SCRIPT src="../../../images/ScrollPic.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="../../../images/jquery.js" type="text/javascript"></SCRIPT>
+
+ <script>
+$(document).ready(function(){
+	var aeles = $("#PL_DAOHANG").find("a");
+	var aele = aeles[aeles.length-1];
+	$(aele).addClass("lastaclass");
+});
+</script>
+
+<script type="text/javascript">  
+    function CloseWebPage() {  
+        if (navigator.userAgent.indexOf("MSIE") > 0) {  
+            if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {  
+                window.opener = null; window.close();  
+            }  
+            else {  
+                window.open('', '_top'); window.top.close();  
+            }  
+        }  
+        else if (navigator.userAgent.indexOf("Firefox") > 0) {  
+            window.location.href = 'about:blank ';  
+            //window.history.go(-2);  
+        }  
+        else {  
+            window.opener = null;   
+            window.open('', '_self', '');  
+            window.close();  
+        }  
+    }  
+</script>  
+
+<style>
+.lastaclass{
+	font-size:14px;
+	color:#a50404;
+}
+</style>  
+</head>
+
+<body style="background:#FFF">
+<div class="home">
+	<div class="main">
+		<script src="../../../images/ie6png_8a.js" type="text/javascript"></script> 
+<script type="text/javascript" src="../../../images/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="../../../images/suggest-yui2.js"></script>
+
+<script type="text/javascript" src="../../../images/jquery.suggest.min.js"></script>
+<script type="text/javascript">
+    window.onload = function()
+    {
+
+        
+        var dataUrl = 'http://www.stats.gov.cn/was5/web/searchsuggest?AppServerEncoding=ISO-8859-1&StringEncoding=utf-8&result=false';
+        var inputid = "search";
+	var data={
+		autoFocus: true, 
+                useShim:false, 
+                resultFormat: '约%result%条结果' 
+	}
+	new TRSWAS.Suggest(inputid, dataUrl, data);
+    };
+
+</script>
+<script type="text/javascript"> 
+DD_belatedPNG.fix('.top03_a img'); 
+</script>
+<script>
+function addfavorite()
+{
+   if (document.all)
+   {
+      window.external.addFavorite('http://www.stats.gov.cn','收藏夹');
+   }
+   else if (window.sidebar)
+   {
+      window.sidebar.addPanel('国家统计局', 'http://www.stats.gov.cn', "");
+   }
+} 
+</script>
+<script>
+function submitForm(){
+//var andsen = document.getElementById("andsen").value;
+var andsen = document.all.searchform.andsen.value;
+if(andsen ==''){
+  //document.getElementById("textfield").value=''
+  alert("请输入检索词");
+  return false;
+}
+
+document.all.searchform.submit();
+
+}
+</script>
+<script>
+function handler_menu(){
+	var currentChannel = "最新发布";//"最新发布"
+	var parentChannel = "统计数据";//增加
+	var objs = document.getElementsByName("PL_MENU_NAME");
+	var obj = null;
+	var curtext = null;
+	for(var i=0;i<objs.length;i++){
+		obj = objs[i];
+		curtext = obj.innerHTML;
+		if(currentChannel.indexOf(curtext) != -1|| parentChannel.indexOf(curtext) != -1){//currentChannel.indexOf(curtext) != -1
+			obj.className = "on";
+			break;
+		}
+	}
+}
+</script>
+<script type="text/javascript"> 
+	function nav(name,cursel,n){
+		for(i=1;i<=n;i++){
+			var menu=document.getElementById(name+i);
+			var con=document.getElementById("con_"+name+"_"+i);
+			con.style.display=i==cursel?"block":"none";
+		}
+	}
+	function navout(name,n){
+		var con=document.getElementById("con_one_"+n);
+		if(name=="over"){
+			con.style.display="block";
+		}	
+		if(name=="out"){
+				con.style.display="none";
+			}
+	}
+</script>
+<style>
+<!--
+.top01_a li,.top01_b li{
+	margin:0px 5px;
+}
+.center_href_tita a.href14:hover{background:none;color:#fff;}
+.top01_b{
+	margin-left:15px;
+	margin-right:15px;
+
+}-->
+.search{width:950px; margin:80px auto 0 auto; padding-right:40px; text-align:right; border:0px;}
+.search_bg{ background:url(/images/xx_search_bg.jpg) no-repeat left top; float:right}
+.bai12,.bai12 a{color:#fff; font-size:12px; text-decoration:none}
+.input1{ width:205px; line-height:30px; height:30px; font-size:14px; color:#999; border:none; background:none}
+.Accessibility_2021 {
+    float: right;
+    position: relative;
+    padding-top: 16px;
+    padding-right: 16px;
+    font-size: 12px;
+    margin-top: -16px;
+
+}
+</style>
+<body style="background:#FFF;">
+<div class="top">
+	<div class="top01">
+		<ul class="top01_a">
+			<li>
+				<a title="首页" href="http://www.stats.gov.cn" target="_parent" >首页</a><!--|<a href="#" onclick="addfavorite()">加为收藏</a>-->
+			</li>
+			<li class="top_line">&nbsp;</li>
+			<li>
+				<fjtignoreurl><!-- <a href="http://www.stats.gov.cn" target="_blank">简体中文
+</a></fjtignoreurl>
+|<a href="http://www.stats.gov.cn:82/gate/big5/www.stats.gov.cn/" target="_blank">繁體中文</a> |--><fjtignoreurl>  <a href="../../../english/" target="_blank">ENGLISH</a></fjtignoreurl>
+			</li>
+			<li class="top_line">&nbsp;</li>
+			<li>
+				<a href="../../../wzgl/rss/" target="_blank">RSS订阅</a>
+			</li>
+			<li class="top_line">&nbsp;</li>
+			<li>
+				<a href="http://weibo.com/nbsstatistics" target="_blank">统计微博</a>|<a href="../../../tjfw/tjyd/" target="_blank">统计微讯</a>|<a href="../../../tjfw/tjyd/" target="_blank" >移动客户端</a>|<a href="http://www.stats.gov.cn/znwd/" target="_blank" style="color:red;">智能咨询</a>
+			</li>
+		</ul>
+
+		<!--<ul class="top01_b" style="padding-left:110px;">
+		 <form name="searchform" action="/was5/web/search"  target="_blank">
+		 <input type='hidden' name='channelid' value='288041' />
+			<li>
+				<input name="andsen" type="text" class="search" id="search" title="请输入关键字" onClick="javascript:if(this.value=='请输入关键字') this.value=''" value="请输入关键字" size="10" maxlength="200" style="background:#FFF;color:#6c6c6c;" />
+			</li>
+			<li class="top_search">
+				<a href="#" onClick="submitForm();">检索</a>|<a href="/was5/web/adv.jsp" target="_blank">高级</a>
+			</li>
+		</form>
+		</ul>-->
+                              
+                 <div style="float:right;padding-right:20px;">
+		<script language='javascript' type="text/javascript">
+			   <!--
+			   tmpDate = new Date();
+			   date = tmpDate.getDate();
+			   month = tmpDate.getMonth() + 1 ;
+			   year = tmpDate.getYear();
+			   year = tmpDate.getYear();
+			   year = year>1900 ? year : year+1900;
+			   document.write(year + "年" + month + "月" + date + "日&nbsp;");
+			    myArray = new Array(6);
+			    myArray[0] = "星期日"
+			    myArray[1] = "星期一"
+			    myArray[2] = "星期二"
+			    myArray[3] = "星期三"
+			    myArray[4] = "星期四"
+			    myArray[5] = "星期五"
+			    myArray[6] = "星期六"
+			    weekday = tmpDate.getDay();
+			    document.write(myArray[weekday])
+			   //-->
+		</script>
+               </div>
+<div class="Accessibility_2021">
+                                <a id="toolbarSwitch" src="javascript:void(0)" href=" ">无障碍浏览</a>
+                                </div>
+	</div>
+	<div class="top02">
+          <div class="search">
+<!--
+    <table class="search_bg" width="350" cellspacing="0" cellpadding="0" border="0">
+      <tbody><tr>
+          <form name="searchform" action="/was5/web/search" target="_blank">   	  <input name="channelid" value="288041" type="hidden" />
+        <td width="235" height="33" align="right"><input name="andsen" class="input1" id="search" value="" onfocus="if(value=='') {value='';}" onblur="if(value=='') {value='';}" type="text" /></td>
+        <td class="bai12" style="font-weight:bold;font-size:14px;" align="center"><a href="javascript:void(0)" onclick="submitForm();">检索</a> |  <a href="/was5/web/adv.jsp">高级</a></td>
+
+        </form>
+
+      </tr>
+     <tr>
+     <td colspan="2" class="bai12" style="font-size:12px;" align="left"> 热词:  <a href="/was5/web/search?channelid=288041&andsen=GDP" target="_blank">GDP</a>&nbsp; <a href="/was5/web/search?channelid=288041&andsen=CPI" target="_blank">CPI</a>&nbsp;  <a href="/was5/web/search?channelid=288041&andsen=PPI" target="_blank">PPI</a>&nbsp; <a href="/was5/web/search?channelid=288041&andsen=PMI" target="_blank">PMI</a>&nbsp;  <a href="/was5/web/search?channelid=288041&andsen=%E6%80%BB%E4%BA%BA%E5%8F%A3" target="_blank">总人口</a>&nbsp;  <a href="/was5/web/search?channelid=288041&andsen=%E7%A4%BE%E4%BC%9A%E6%B6%88%E8%B4%B9%E5%93%81%E9%9B%B6%E5%94%AE%E6%80%BB%E9%A2%9D" target="_blank">社会消费品零售总额</a></td>
+    </tr>
+    </tbody></table>
+-->
+<table class="search_bg" width="350" cellspacing="0" cellpadding="0" border="0">
+			<tbody>
+				<tr>
+					<form name="searchform" action="" target="_blank" onsubmit="return false">
+
+						<td width="235" height="33" align="right">
+							<input name="qt" class="input1" id="search" value="" onfocus="if(value=='') {value='';}" onblur="if(value=='') {value='';}" type="text" autocomplete="off" />
+						</td>
+						<td class="bai12" style="font-weight:bold;font-size:14px;" align="center">
+							<a href="javascript:void(0)" onclick="submitFormT();">检索</a> | <a href="http://www.stats.gov.cn/search/s?advancedSearchType=2" target="_blank">高级</a>
+						</td>
+					</form>
+				</tr>
+				<tr>
+					<td colspan="2" class="bai12" style="font-size:12px;" align="left"> 热词: 
+                                                <a href="http://www.stats.gov.cn/search/s?qt=GDP" target="_blank">GDP</a>&nbsp; 
+						<a href="http://www.stats.gov.cn/search/s?qt=CPI" target="_blank">CPI</a>&nbsp; 
+						<a href="http://www.stats.gov.cn/search/s?qt=PPI" target="_blank">PPI</a>&nbsp; 
+						<a href="http://www.stats.gov.cn/search/s?qt=PMI" target="_blank">PMI</a>&nbsp; 
+						<a href="http://www.stats.gov.cn/search/s?qt=%E6%80%BB%E4%BA%BA%E5%8F%A3" target="_blank">总人口</a>&nbsp; 
+						<a href="http://www.stats.gov.cn/search/s?qt=%E7%A4%BE%E4%BC%9A%E6%B6%88%E8%B4%B9%E5%93%81%E9%9B%B6%E5%94%AE%E6%80%BB%E9%A2%9D"	target="_blank">社会消费品零售总额</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	<script type="text/javascript">
+		// 搜索
+		function submitFormT() {
+			var temp = searchform.qt.value;
+			if (temp == null || temp == "") {
+				alert("请输入搜索条件");
+			} else {
+				var url = 'http://www.stats.gov.cn/search/s?qt=' + encodeURIComponent(temp);
+				window.open(url);
+			}
+		}
+	</script>
+        </div>
+      </div>
+	<div class="top03">
+		<ul class="top03_a" id="nav">
+			<li>
+				<a href="../../../zjtj/" target="_top"><img src="../../../images/top03_1.png" /></a>
+				<ul class="top03_a01" id="one1" onMouseOver="nav('one',1,6)">
+				  
+					<li><a name='PL_MENU_NAME' href="../../../zjtj/gjtjj/"  target="_top">国家统计局</a></li>
+				 
+					<li><a name='PL_MENU_NAME' href="https://www.ndrc.gov.cn/fzggw/pzjg/zwjjjcz/"  target="_top">派驻纪检组</a></li>
+				 
+					<li><a name='PL_MENU_NAME' href="../../../zjtj/jgzn/"  target="_top">机构职能</a></li>
+				 		
+				</ul>
+			</li>
+			<li><img src="../../../images/top03_a.png" /></li>
+			<li>
+				<a href="../../" target="_top"><img src="../../../images/top03_2.png" /></a>
+				<ul class="top03_a01" id="one2" onMouseOver="nav('one',2,6)">
+				
+					<li><a name='PL_MENU_NAME' href="../" target="_top">最新发布</a></li>
+				
+				
+					<li><a name='PL_MENU_NAME' href="https://data.stats.gov.cn/" target="_blank">数据查询</a></li>
+				
+				
+					<li><a name='PL_MENU_NAME' href="../../sjjd/" target="_top">数据解读</a></li>
+				
+				</ul>
+			</li>
+			<li><img src="../../../images/top03_a.png" /></li>
+			<li>
+				<a href="../../../tjgz/" target="_top"><img src="../../../images/top03_3.png" /></a>
+				<ul class="top03_a01" id="one3" onMouseOver="nav('one',3,6)">
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tjdt/" target="_top">统计动态</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tjdj/" target="_top">统计党建</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tzgb/" target="_top">通知公告</a></li>
+				
+				</ul>
+			</li>
+			<li><img src="../../../images/top03_a.png" /></li>
+			<li>
+				<a href="../../../tjzs/" target="_top"><img src="../../../images/top03_4.png" /></a>
+				<ul class="top03_a01" id="one4" onMouseOver="nav('one',4,6)">
+				 
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/tjbk/" target="_top">统计百科</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/tjcd/" target="_top">统计词典</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/cjwtjd/" target="_top">常见问题解答</a></li>
+				
+				</ul>
+			</li>
+			<li><img src="../../../images/top03_a.png" /></li>
+			<li>
+				<a href="../../../tjfw/" target="_top"><img src="../../../images/top03_5.png" /></a>
+				<ul class="top03_a01" id="one5" onMouseOver="nav('one',5,6)">
+					<li><a name='PL_MENU_NAME' href="http://microdata.stats.gov.cn" target="_top">微观数据申请</a></li>
+					<li><a name='PL_MENU_NAME' href="../../../tjfw/bgt2018/" target="_top">曝光台</a></li>
+					<li><a name='PL_MENU_NAME' href="../../../tjfw/tjxzcfgs/" target="_top">行政处罚信息</a></li>
+                                        
+				</ul>
+			</li>
+			<li><img src="../../../images/top03_a.png" /></li>
+			<li>
+				<a href="http://www.stats.gov.cn/xxgk/list2.html"><img src="../../../images/top03_6.png" /></a>
+				<ul class="top03_a01" id="one6" onMouseOver="nav('one',6,6)">
+					<li><a href="/xxgk/list1.html" target="_blank" >政&emsp;策</a></li>
+                                        <li><a href="/xxgk/list2.html" target="_blank" >公开指南</a></li>
+                                        <li><a href="/xxgk/list3.html" target="_blank" >公开制度</a></li>
+					
+				</ul>
+			</li>
+		</ul>
+
+
+		<div class="top04">
+			<ul class="top03_a01 one1" id="con_one_1" onMouseOver="navout('over',1)" onMouseOut="navout('out',1)">
+			 
+				<li><a name='PL_MENU_NAME' href="../../../zjtj/gjtjj/" target="_top">国家统计局</a></li>
+				
+            
+				<li><a name='PL_MENU_NAME' href="https://www.ndrc.gov.cn/fzggw/pzjg/zwjjjcz/" target="_blank">派驻纪检组</a></li>
+			
+            
+            
+				<li><a name='PL_MENU_NAME' href="../../../zjtj/jgzn/" target="_top">机构职能</a></li>
+			
+				<li><a name='PL_MENU_NAME' href="../../../zjtj/tjfg/" target="_top">统计法规</a></li>
+				
+			</ul>
+			<ul class="top03_a01 one2" id="con_one_2" onMouseOver="navout('over',2)"  onmouseout="navout('out',2)">
+			     
+					<li><a name='PL_MENU_NAME' href="../" target="_top">最新发布</a></li>
+					
+					
+					<li><a name='PL_MENU_NAME' href="https://data.stats.gov.cn/" target="_blank">数据查询</a></li>
+					
+					
+					<li><a name='PL_MENU_NAME' href="../../sjjd/" target="_top">数据解读</a></li>
+					
+					<li><a name='PL_MENU_NAME' href="../../xwfbh/" target="_top">新闻发布会</a></li>
+					
+					<li><a name='PL_MENU_NAME' href="../../tjzd/" target="_top">统计制度</a></li>
+					
+					<li><a name='PL_MENU_NAME' href="../../tjbz/" target="_top">统计标准</a></li>
+					
+					<li><a name='PL_MENU_NAME' href="../../zbjs/" target="_top">指标解释</a></li>
+					
+					<li><a name='PL_MENU_NAME' href="../../tjgb/" target="_top">统计公报</a></li>
+					
+					<li><a name='PL_MENU_NAME' href="../../tjcbw/" target="_top">统计出版物</a></li>
+					
+			</ul>
+			<ul class="top03_a01 one3" id="con_one_3" onMouseOver="navout('over',3)"  onmouseout="navout('out',3)">
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tjdt/" target="_top">统计动态</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tjdj/" target="_top">统计党建</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tzgb/" target="_top">通知公告</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/tpxw/" target="_top">图片新闻</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/spxw/" target="_top">视频新闻</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="http://www.stats.gov.cn/ztjc/" target="_top">专题集粹</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/xzsp/" target="_top">行政审批</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjgz/wznb/" target="_top">网站年报</a></li>
+				
+			</ul>
+			<ul class="top03_a01 one4" id="con_one_4" onMouseOver="navout('over',4)"  onmouseout="navout('out',4)">
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/tjbk/" target="_top">统计百科</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/tjcd/" target="_top">统计词典</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/cjwtjd/" target="_top">常见问题解答</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/spdb/" target="_top">视频点播</a></li>
+				
+					<li><a name='PL_MENU_NAME' href="../../../tjzs/tjsj/" target="_top">统计刊物</a></li>
+				
+			</ul>
+			<ul class="top03_a01 one5" id="con_one_5" onMouseOver="navout('over',5)"  onmouseout="navout('out',5)">
+				
+                                <li><a name='PL_MENU_NAME' href="http://microdata.stats.gov.cn" target="_blank">微观数据申请</a></li>
+                                <li><a name='PL_MENU_NAME' href="../../../tjfw/bgt2018/" target="_top">曝光台</a></li>
+                                <li><a name='PL_MENU_NAME' href="../../../tjfw/tjxzcfgs/" target="_top">行政处罚信息</a></li>                                          
+                                <li><a name='PL_MENU_NAME' href="../../../tjfw/sxqygs/" target="_top">失信企业公示</a></li>                                
+                                <li><a name='PL_MENU_NAME' href="../../../tjfw/rysxgs/" target="_top">人员失信公示</a></li>
+<li><a name='PL_MENU_NAME' href="http://www.stats.gov.cn/xxgk/cs/" target="_blank">执法证公示</a></li>  
+                                <li><a name='PL_MENU_NAME' href="../../../tjfw/wsbs/" target="_top">网上办事</a></li>
+                                <li><a name='PL_MENU_NAME' href="https://swdc.stats.gov.cn/SinoEP_NBS/a/login?code=90000&flag=false" target="_blank">涉外调查许可 </a></li>
+				<li><a name='PL_MENU_NAME' href="http://www.stats.gov.cn/znwd/" target="_top">智能咨询</a></li>
+				<li><a name='PL_MENU_NAME' href="../../../tjfw/jzxx/" target="_top">局长信箱</a></li>
+				<li><a name='PL_MENU_NAME' href="../../../tjfw/yjzjfb/" target="_top">意见征集</a></li>
+				<li><a name='PL_MENU_NAME' href="../../../tjfw/zxft/" target="_top">在线访谈</a></li>
+				<li><a name='PL_MENU_NAME' href="../../../tjfw/tsjb/" target="_top">统计违法举报</a></li>
+					
+			</ul>
+			<ul class="top03_a01 one6" id="con_one_6" onMouseOver="navout('over',6)"  onmouseout="navout('out',6)">
+				<li><a href="/xxgk/list1.html" target="_blank" >政&emsp;策</a></li>
+                                <li><a href="/xxgk/list2.html" target="_blank" >公开指南</a></li>
+                                <li><a href="/xxgk/list3.html" target="_blank" >公开制度</a></li>
+				<li><a href="/xxgk/list4.html" target="_blank" >主动公开内容</a></li>
+				<li><a href="/xxgk/list5.html" target="_blank" >公开年报</a></li>
+                                <li><a href="/xxgk/list6.html" target="_blank" >公开申请</a></li>	
+                                			         
+		                
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+		<div class="dang">
+			<img src="../../../images/b01.gif" /><font class="dang_a" id="PL_DAOHANG">当前位置&nbsp;>&nbsp;<a href="../../../" title="首页" class="CurrChnlCls">首页</a>&nbsp;&gt;&nbsp;<a href="../../" title="统计数据" class="CurrChnlCls">统计数据</a>&nbsp;&gt;&nbsp;<a href="../" title="最新发布" class="CurrChnlCls">最新发布</a></font>
+		</div>
+		<div class="center">
+			<div class="center_xilan" style="min-height:400px;">
+				<h2 class="xilan_tit">2014年1-4季度我国GDP（国内生产总值）初步核算情况</h2>
+				<font class="xilan_titf">
+					<font style="float:left;width:560px;text-align:right;margin-right:60px;">来源：<font style="color:#1f5781;margin-right:50px;">国家统计局</font>发布时间：2015-01-21&nbsp;09:30
+					</font>
+					<input type="button" value="关闭窗口" onclick="javascript:CloseWebPage()" />
+					<input type="button" value="打印本页" onclick="javascript:window.print()" />
+                                        <div style="float:right">
+                                           <div class="bshare-custom icon-medium" style="width:170px;">
+    <a title="分享到微信" class="bshare-weixin"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到QQ空间" class="bshare-qzone"></a>
+</div>
+                                           <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                                        </div>
+				</font>
+				<div class="xilan_con" style="margin-top:25px;width:908px;"><div class=TRS_Editor><div style="overflow-x: hidden; word-break: break-all" class="TRS_PreAppend"><span lang="EN-US"><p class="MsoNormal"><span style="font-family: 宋体; font-size: 12pt">　　根据有关基础资料和国民经济核算方法，</span><span style="font-size: 12pt" lang="EN-US">2014</span><span style="font-family: 宋体; font-size: 12pt">年</span><span style="font-size: 12pt" lang="EN-US">1-4</span><span style="font-family: 宋体; font-size: 12pt">季度我国</span><span style="font-size: 12pt" lang="EN-US">GDP</span><span style="font-family: 宋体; font-size: 12pt">初步核算结果如下：</span></p><p class="MsoNormal"><span style="font-size: 12pt" lang="EN-US">&nbsp;</span></p><div align="center"><table style="border-bottom: medium none; border-left: medium none; border-collapse: collapse; border-top: medium none; border-right: medium none" class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0">    <tbody>        <tr style="height: 1cm">            <td style="border-bottom: black 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 415.6pt; padding-right: 0cm; background: white; height: 1cm; border-top: medium none; border-right: medium none; padding-top: 0cm" width="554" colspan="3">            <p style="text-align: center; line-height: 16pt; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><b><span style="font-family: 宋体; font-size: 12pt">表</span></b><b><span style="font-size: 12pt" lang="EN-US">1</span></b><b><span style="font-family: 宋体; font-size: 12pt">：</span></b><b><span style="font-size: 12pt" lang="EN-US">2014</span></b><b><span style="font-family: 宋体; font-size: 12pt">年</span></b><b><span style="font-size: 12pt" lang="EN-US">1-4</span></b><b><span style="font-family: 宋体; font-size: 12pt">季度</span></b><b><span style="font-size: 12pt" lang="EN-US">GDP</span></b><b><span style="font-family: 宋体; font-size: 12pt">初步核算数据</span></b></p>            </td>        </tr>        <tr style="height: 1cm">            <td style="border-bottom: black 1pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 1cm; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><span lang="EN-US">&nbsp;</span></p>            </td>            <td style="border-bottom: black 1pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 1cm; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><span style="font-family: 宋体">绝对额（亿元）</span></p>            </td>            <td style="border-bottom: black 1pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 1cm; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><span style="font-family: 宋体">比上年同期增长（</span><span lang="EN-US">%</span><span style="font-family: 宋体">）</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>GDP</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>636463</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>7.4</strong></span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体"><strong>第一产业</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>58332</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>4.1</strong></span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体"><strong>第二产业</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>271392</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>7.3</strong></span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体"><strong>第三产业</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>306739</strong></span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US"><strong>8.1</strong></span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">&nbsp;</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">&nbsp;</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">&nbsp;</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">农林牧渔业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">60151</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">4.2</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">工业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">227991</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">7.0</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">建筑业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">44725</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">8.9</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">批发和零售业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">62216</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">9.5</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">交通运输、仓储和邮政业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">28750</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">7.0</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">住宿和餐饮业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">11199</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">6.2</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">金融业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">46954</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">10.2</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">房地产业</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">38167</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">2.3</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: windowtext 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">其他服务业</span></p>            </td>            <td style="border-bottom: windowtext 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.75pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">116311</span></p>            </td>            <td style="border-bottom: windowtext 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.55pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: right; margin: 0cm 42.5pt 0pt 2.85pt" class="MsoNormal" align="left"><span lang="EN-US">8.8</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 415.6pt; padding-right: 0cm; background: white; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="554" colspan="3">            <p style="margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 楷体">　注：</span><span lang="EN-US">1.</span><span style="font-family: 楷体">绝对额按现价计算，增长速度按不变价计算；</span></p>            <p style="margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 楷体">　　　</span><span lang="EN-US">2.</span><span style="font-family: 楷体">三次产业分类依据国家统计局</span><span lang="EN-US">2012</span><span style="font-family: 楷体">年制定的《三次产业划分规定》；</span></p>            <p style="margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 楷体">　　　</span><span lang="EN-US">3.</span><span style="font-family: 楷体">行业分类采用《国民经济行业分类（</span><span lang="EN-US">GB/T 4754</span><span style="font-family: 楷体">－</span><span lang="EN-US">2011</span><span style="font-family: 楷体">）》。</span></p>            </td>        </tr>    </tbody></table></div><p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p><div align="center"><table style="border-bottom: medium none; border-left: medium none; border-collapse: collapse; border-top: medium none; border-right: medium none" class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0">    <tbody>        <tr style="height: 1cm">            <td style="border-bottom: black 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 415.6pt; padding-right: 0cm; background: white; height: 1cm; border-top: medium none; border-right: medium none; padding-top: 0cm" width="554" colspan="3">            <p style="text-align: center; line-height: 16pt; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><b><span style="font-family: 宋体; font-size: 12pt">表</span></b><b><span style="font-size: 12pt" lang="EN-US">2</span></b><b><span style="font-family: 宋体; font-size: 12pt">：</span></b><b><span style="font-size: 12pt" lang="EN-US">GDP</span></b><b><span style="font-family: 宋体; font-size: 12pt">环比和同比增长速度</span></b></p>            </td>        </tr>        <tr style="height: 1cm">            <td style="border-bottom: black 1pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 1cm; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><span style="font-family: 宋体">　</span></p>            </td>            <td style="border-bottom: black 1pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 1cm; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><span lang="EN-US">GDP</span><span style="font-family: 宋体">环比增长速度（</span><span lang="EN-US">%</span><span style="font-family: 宋体">）</span></p>            </td>            <td style="border-bottom: black 1pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 1cm; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="center"><span lang="EN-US">GDP</span><span style="font-family: 宋体">同比增长速度（</span><span lang="EN-US">%</span><span style="font-family: 宋体">）</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">2013</span><span style="font-family: 宋体">年</span><span lang="EN-US">1</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.7</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.8</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">　　　</span><span lang="EN-US">2</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.8</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.5</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">　　　</span><span lang="EN-US">3</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">2.3</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.9</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">　　　</span><span lang="EN-US">4</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.8</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.6</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">2014</span><span style="font-family: 宋体">年</span><span lang="EN-US">1</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.6</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.4</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">　　　</span><span lang="EN-US">2</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.9</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.5</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">　　　</span><span lang="EN-US">3</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.9</span></p>            </td>            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.3</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: windowtext 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.3pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="184">            <p style="text-justify: inter-ideograph; text-align: justify; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 宋体">　　　</span><span lang="EN-US">4</span><span style="font-family: 宋体">季度</span></p>            </td>            <td style="border-bottom: windowtext 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: black 1pt solid; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">1.5</span></p>            </td>            <td style="border-bottom: windowtext 1.5pt solid; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 138.65pt; padding-right: 0cm; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="185">            <p style="text-align: center; margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span lang="EN-US">7.3</span></p>            </td>        </tr>        <tr style="height: 14.15pt">            <td style="border-bottom: medium none; border-left: medium none; padding-bottom: 0cm; padding-left: 0cm; width: 415.6pt; padding-right: 0cm; background: white; height: 14.15pt; border-top: medium none; border-right: medium none; padding-top: 0cm" width="554" colspan="3">            <p style="margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 楷体">　注：</span><span lang="EN-US">1.</span><span style="font-family: 楷体">环比增长速度为经季节调整后与上一季度对比的增长速度；</span></p>            <p style="margin: 0cm 2.85pt 0pt" class="MsoNormal" align="left"><span style="font-family: 楷体">　　　</span><span lang="EN-US">2.</span><span style="font-family: 楷体">同比增长速度为与上年同期对比的增长速度。</span></p>            </td>        </tr>    </tbody></table></div><p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<strong>附注</strong></span></p><p class="MsoNormal">&nbsp;</p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">&nbsp;&nbsp;&nbsp;<span lang="EN-US">1.</span>季度<span lang="EN-US">GDP</span>核算概述</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.1 </span>基本概念</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>（国内生产总值），是一个国家（或地区）所有常住单位在一定时期内生产活动的最终成果。<span lang="EN-US">GDP</span>是国民经济核算的核心指标，也是衡量一个国家或地区经济状况和发展水平的重要指标。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>核算有三种方法，即生产法、收入法和支出法，三种方法从不同的角度反映国民经济生产活动成果。生产法是从生产的角度衡量常住单位在核算期内新创造价值的一种方法，即从国民经济各个部门在核算期内生产的总产品价值中，扣除生产过程中投入的中间产品价值，得到增加值。核算公式为：增加值＝总产出－中间投入。收入法是从生产过程创造收入的角度，根据生产要素在生产过程中应得的收入份额反映最终成果的一种核算方法。按照这种核算方法，增加值由劳动者报酬、生产税净额、固定资产折旧和营业盈余四部分相加得到。支出法是从最终使用的角度衡量核算期内产品和服务的最终去向，包括最终消费支出、资本形成总额和货物与服务净出口三个部分。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　国家统计局发布的季度<span lang="EN-US">GDP</span>是以生产法为基础核算的结果。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.2 </span>核算范围</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.2.1</span></span><span style="font-family: 楷体; font-size: 12pt">生产范围</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>核算的生产范围包括以下三个部分：第一，生产者提供或准备提供给其他单位的货物和服务的生产；第二，生产者用于自身最终消费或资本形成的所有货物的自给性生产；第三，自有住房拥有者为自己最终消费提供的自有住房服务，以及付酬的自给性家庭服务生产。生产范围不包括不支付报酬的自给性家庭服务、没有单位控制的自然活动（如野生的、未经培育的森林、野果或野浆果的自然生长，公海中鱼类数量的自然增长）以及部分“未观测经济”等。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.2.2</span></span><span style="font-family: 楷体; font-size: 12pt" lang="EN-US"> </span><span style="font-family: 楷体; font-size: 12pt">生产活动主体范围</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>生产活动主体范围包括了中国经济领土范围内具有经济利益中心的所有常住单位。本报告中的季度<span lang="EN-US">GDP</span>数据是由国家统计局负责核算的全国数据，未包括香港、澳门特别行政区和台湾省的地区生产总值数据。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.3 </span>核算单位</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>核算主要以法人单位作为核算单位，在核算中依据法人单位从事的主要活动将其划分到不同的行业，分别计算各个行业的增加值，再将各行业增加值汇总得到<span lang="EN-US">GDP</span>。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.4 </span>核算频率</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　核算频率为季度，中国从<span lang="EN-US">1992</span>年<span lang="EN-US">1</span>季度开始核算季度<span lang="EN-US">GDP</span>。目前，季度核算采取累计核算方式，即分别计算各年<span lang="EN-US">1</span>季度，<span lang="EN-US">1-2</span>季度，<span lang="EN-US">1-3</span>季度和<span lang="EN-US">1-4</span>季度的<span lang="EN-US">GDP</span>数据，<span lang="EN-US">1-4</span>季度<span lang="EN-US"> GDP</span>初步核算即为年度<span lang="EN-US">GDP</span>初步核算。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　从<span lang="EN-US">2011</span>年<span lang="EN-US">1</span>季度开始，国家统计局正式对外发布各季<span lang="EN-US">GDP</span>环比增长速度。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.5 </span>法律依据和制度规定</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>核算严格遵守《中华人民共和国统计法》的规定。目前，中国<span lang="EN-US">GDP</span>是按照《中国国民经济核算体系（<span lang="EN-US">2002</span>）》（<span lang="EN-US">CSNA</span>）的要求进行测算的，该体系采纳了联合国<span lang="EN-US">1993</span>年《国民经济核算体系》（<span lang="EN-US">SNA</span>）的基本核算原则、内容和方法。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.6 </span>保密性</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　依照《中华人民共和国统计法》第一章第九条的规定，统计机构和统计人员对在统计工作中知悉的国家秘密、商业秘密和个人信息，应当予以保密。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　国民经济核算人员在进行<span lang="EN-US">GDP</span>核算时对所使用的未经公开的专业统计数据和行政记录数据严格保密，在<span lang="EN-US">GDP</span>核算数据发布前对当期<span lang="EN-US">GDP</span>数据也严格保密。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">1.7 </span>用户需求</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　季度<span lang="EN-US">GDP</span>数据的国内用户主要是政府部门、研究机构、大学、行业协会、媒体以及社会公众。此外，国家统计局定期向联合国、国际货币基金组织、经济合作与发展组织、亚洲开发银行等国际组织提供中国季度<span lang="EN-US">GDP</span>数据。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.</span>季度<span lang="EN-US">GDP</span>核算方法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.1 </span>分类体系</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　在季度<span lang="EN-US">GDP</span>核算中，行业划分依据中国国民经济行业分类标准和三次产业划分标准，并采用两种分类方式。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　第一种分类是三次产业分类，依据国家统计局<span lang="EN-US">2012</span>年制定的《三次产业划分规定》，分为第一产业、第二产业和第三产业。第一产业是指农、林、牧、渔业（不含农、林、牧、渔服务业）；第二产业是指采矿业（不含开采辅助活动），制造业（不含金属制品、机械和设备修理业），电力、热力、燃气及水生产和供应业，建筑业；第三产业即服务业，是指除第一产业、第二产业以外的其他行业（剔除国际组织）。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　第二种分类是国民经济行业分类，采用国家标准管理部门<span lang="EN-US">2011</span>年颁布的《国民经济行业分类（<span lang="EN-US">GB/T 4754</span>－<span lang="EN-US">2011</span>）》。在实际核算中采用两级分类。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　第一级分类基本上采用国民经济行业分类中的门类，分为农、林、牧、渔业，工业，建筑业，批发和零售业，交通运输、仓储和邮政业，住宿和餐饮业，金融业，房地产业，其他服务业等<span lang="EN-US">9</span>个行业。其中工业包含采矿业，制造业，电力、热力、燃气及水生产和供应业<span lang="EN-US">3</span>个门类行业；其他服务业包含信息传输、软件和信息技术服务业，租赁和商务服务业，科学研究和技术服务业，水利、环境和公共设施管理业，居民服务、修理和其他服务业，教育，卫生和社会工作，文化、体育和娱乐业，公共管理、社会保障和社会组织等<span lang="EN-US">9</span>个门类行业。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　第二级分类在第一级分类的基础上，将国民经济行业分类中的一部分门类，细化为行业大类。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.2 </span>资料来源</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　在季度<span lang="EN-US">GDP</span>核算时，将所有可以在核算时获得的、适用的经济统计调查数据都用于<span lang="EN-US">GDP</span>核算。资料来源主要包括两部分：</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　一是国家统计调查资料，指由国家统计系统实施的统计调查获得的各种统计资料，如农林牧渔业、工业、建筑业、批发和零售业、住宿和餐饮业、房地产业、规模以上服务业等统计调查资料、人口与劳动工资统计资料、价格统计资料等。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　二是行政管理部门的行政记录资料，主要包括：财政部、中国人民银行、国家税务总局、保监会、证监会等行政管理部门的相关数据，例如中国人民银行的金融机构本外币信贷收支情况、国家税务总局分行业的税收资料等。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.3 </span>核算方法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.3.1</span></span><span style="font-family: 楷体; font-size: 12pt">现价增加值核算方法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　根据资料来源情况，季度现价增加值核算主要采用增加值率法、相关价值量指标推算法、以及利用不变价推算现价等方法。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　（<span lang="EN-US">1</span>）增加值率法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　增加值率法是先计算现价总产出，再根据上年年报资料和当期有关生产情况确定现价增加值率，然后将二者相乘得出增加值，计算公式为：</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　现价增加值＝现价总产出×现价增加值率</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　（<span lang="EN-US">2</span>）相关价值量指标速度推算法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　相关价值量指标速度推算法是利用相关价值量指标的现价增长速度推算现价增加值的增长速度，然后用上年同期现价增加值乘以推算出的现价增加值增长速度得出当期现价增加值，计算公式为：</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　现价增加值＝上年同期现价增加值×（<span lang="EN-US">1</span>＋现价增加值增长速度）</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　其中，现价增加值增长速度，根据本期相关价值量指标现价增长速度，以及以前年度现价增加值增长速度和相关价值量指标的现价增长速度之间的数量关系确定。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　（<span lang="EN-US">3</span>）利用不变价推算现价方法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　先利用物量指数外推法求得本期不变价增加值，再根据相关价格指数推算现价增加值。计算公式为：</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　现价增加值＝不变价增加值×价格指数</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.3.2</span></span><span style="font-family: 楷体; font-size: 12pt" lang="EN-US"> </span><span style="font-family: 楷体; font-size: 12pt">不变价增加值核算方法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　不变价增加值是把按当期价格计算的增加值换算成按某个固定期（基期）价格计算的价值，从而剔除价格变化因素的影响，以使不同时期的价值可以比较。不变价增加值采用固定基期方法计算，目前每<span lang="EN-US">5</span>年更换一次基期，现在的基期是<span lang="EN-US">2010</span>年。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　季度不变价增加值核算主要采用价格指数缩减法和相关物量指数外推法。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　（<span lang="EN-US">1</span>）价格指数缩减法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　利用相关价格指数直接缩减现价增加值，计算不变价增加值，计算公式为：</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　不变价增加值＝现价增加值÷价格指数</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　（<span lang="EN-US">2</span>）物量指数外推法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　物量指数外推法就是利用相关物量指标的增长速度推算不变价增加值的增长速度，然后用上年同期不变价增加值乘以推算出的不变价增加值增长速度得出当期不变价增加值，计算公式为：</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　不变价增加值＝上年同期不变价增加值 ×（<span lang="EN-US">1</span>＋不变价增加值增长速度）</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　其中，不变价增加值增长速度，根据本期相关物量指标增长速度，以及以前年度不变价增加值增长速度和相关物量指标的增长速度之间的数量关系确定。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">2.4 </span>季节调整</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">GDP</span>环比增长速度是季度增加值与上一个季度增加值数据对比的结果。在测算时，须剔除季节性因素对时间序列的影响，利用国家统计局版季节调整软件（<span lang="EN-US">NBS-SA</span>）对时间序列进行季节调整。<span lang="EN-US">NBS-SA</span>是在目前国际上比较常用的季节调整软件的基础上，考虑了中国特有的季节因素研制而成的。该软件添加了处理中国特有的季节因素的新模块，有效剔除了中国特有的季节因素，包括春节、端午、中秋等移动假日因素、周工作天数从原来的<span lang="EN-US">6</span>天制到<span lang="EN-US">5</span>天制转变的因素、假期变动及调休带来的变化因素等。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">3.</span>季度<span lang="EN-US">GDP</span>数据修订</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">3.1 </span>修订的必要性</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　季度<span lang="EN-US">GDP</span>初步核算对时效性要求很强，一般在季后<span lang="EN-US">15</span>天左右公布，这时，<span lang="EN-US">GDP</span>核算所需要的基础资料不能全部获得，因此季度<span lang="EN-US">GDP</span>初步核算利用专业统计进度资料和相关指标推算得到。之后，随着可以获得的基础资料不断增加和完善，会利用更加完整的基础资料，例如，专业统计年报、行业财务资料和财政决算资料对<span lang="EN-US">GDP</span>数据进行修订，使其更加准确地反映经济发展实际情况。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">3.2 </span>修订程序</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　按照《国家统计局关于我国季度国内生产总值核算和数据发布程序规定》，以及《关于我国<span lang="EN-US">GDP</span>核算和数据发布制度的改革》的规定，中国季度<span lang="EN-US">GDP</span>核算分为初步核算、初步核实和最终核实三个步骤。通常，年度<span lang="EN-US">GDP</span>初步核实和最终核实后，要对季度数据进行修订，称为常规修订；在开展全国经济普查，发现对<span lang="EN-US">GDP</span>数据有较大影响的新的基础资料，或计算方法及分类标准发生变化后而对年度<span lang="EN-US">GDP</span>历史数据进行修订后，也要对季度<span lang="EN-US">GDP</span>历史数据进行相应修订，称为全面修订。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">3.3 </span>修订方法</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">3.3.1</span></span><span style="font-family: 楷体; font-size: 12pt" lang="EN-US"> </span><span style="font-family: 楷体; font-size: 12pt">累计数据的修订</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　中国目前对季度<span lang="EN-US">GDP</span>数据修订的方法是比例衔接法，即利用年度基准值与年内四个季度汇总数的差率调整季度数据的方法。比例衔接法的基本做法是：首先对国民经济各行业现价和不变价增加值分别进行衔接，<span lang="EN-US">GDP</span>和三次产业增加值是衔接后的行业增加值的加总。不变价<span lang="EN-US">GDP</span>和不变价三次产业增加值的衔接方法与现价相同。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">3.3.2</span></span><span style="font-family: 楷体; font-size: 12pt" lang="EN-US"> </span><span style="font-family: 楷体; font-size: 12pt">环比数据的修订</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　由于季节调整的对象是时间序列数据，因此，当时间序列中任何一个季度数据发生变化时，都会影响季节调整的结果；在时间序列中加入最新的一个季度的数据，也会使以前季度的环比数据或多或少地发生变化，这是模型自动修正的结果。根据季节调整原理，一般情况下，离最新数据时间较近的时期，数据受影响较大；离最新数据时间较远的时期，数据受影响较小。为便于用户使用，在发布当期环比数据的同时，会通过国家统计局网站发布修订后的以前季度的环比数据。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">4.</span>季度<span lang="EN-US">GDP</span>数据质量评估</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">4.1 </span>对基础数据的评估</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　对于<span lang="EN-US">GDP</span>核算所使用的各专业统计数据和行政记录数据，有关部门都会对其质量进行检验，确保数据合理反映经济发展实际情况。当<span lang="EN-US">GDP</span>核算部门得到这些基础数据后，会再次对数据的完整性和准确性进行检验，确保这些数据符合<span lang="EN-US">GDP</span>核算的概念和要求。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">4.2 </span>对核算方法的评估</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　在<span lang="EN-US">GDP</span>核算中，<span lang="EN-US">GDP</span>核算部门会根据不断发展的中国经济实际情况，依据不断完善的国民经济核算标准，对中国的季度<span lang="EN-US">GDP</span>核算方法进行修订，以确保核算方法的合理性。目前，正着手研究对《中国国民经济核算体系（<span lang="EN-US">2002</span>）》进行修订。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">4.3 </span>对核算结果的评估</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　在得到季度<span lang="EN-US">GDP</span>核算结果后，要对<span lang="EN-US">GDP</span>各构成项目数据、<span lang="EN-US">GDP</span>数据与相关专业、部门统计数据以及宏观数据的协调性进行检验，保证<span lang="EN-US">GDP</span>数据和其他主要数据的相互协调和匹配。正在建立以国民经济核算为核心框架，对各专业和部门基础统计数据进行评估的制度。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">4.4 </span>数据的可比性</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　《中国国民经济核算体系（<span lang="EN-US">2002</span>）》采纳了联合国<span lang="EN-US">1993</span>年《国民经济核算体系》（<span lang="EN-US">SNA</span>）的基本核算原则、内容和方法，因而<span lang="EN-US">GDP</span>数据具有国际可比性。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　在开展全国经济普查或计算方法及分类标准发生变化后对季度<span lang="EN-US">GDP</span>历史数据进行了修订，因此<span lang="EN-US">1992</span>年<span lang="EN-US">1</span>季度以来的季度<span lang="EN-US">GDP</span>时间序列具有可比性。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">5.</span>季度<span lang="EN-US">GDP</span>数据发布</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">5.1 </span>发布时间</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　季度<span lang="EN-US">GDP</span>初步核算数一般于季后<span lang="EN-US">15</span>天左右完成；季度<span lang="EN-US">GDP</span>初步核实数在年度<span lang="EN-US">GDP</span>初步核实数发布后<span lang="EN-US">45</span>天内完成；季度<span lang="EN-US">GDP</span>最终核实数在年度<span lang="EN-US">GDP</span>最终核实数发布后<span lang="EN-US">45</span>天内完成。对于主要统计指标的发布，国家统计局会在年初发布的《主要统计信息发布日程表》中说明发布日期，<span lang="EN-US">GDP</span>数据将按规定日程发布。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　<span lang="EN-US">5.2 </span>发布方式</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　季度<span lang="EN-US">GDP</span>初步核算数一般于季后<span lang="EN-US">15</span>天左右在季度国民经济运行情况新闻发布会、国家统计局网站（<span lang="EN-US"><a href="http://www.stats.gov.cn/">www.stats.gov.cn</a></span>）、《中国经济景气月报》上公布；季度<span lang="EN-US">GDP</span>初步核实数在国家统计数据库（<span lang="EN-US"><a href="http://data.stats.gov.cn/workspace/index?m=hgjd">http://data.stats.gov.cn/workspace/index?m=hgjd</a></span>）、《中国经济景气月报》上公布；季度<span lang="EN-US">GDP</span>最终核实数在国家统计数据库（<span lang="EN-US"><a href="http://data.stats.gov.cn/workspace/index?m=hgjd">http://data.stats.gov.cn/workspace/index?m=hgjd</a></span>）、《中国经济景气月报》上公布。</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt" lang="EN-US">&nbsp;</span></p><p class="MsoNormal"><span style="font-family: 楷体; font-size: 12pt">　　对于<span lang="EN-US">1992</span>年<span lang="EN-US">1</span>季度以来的季度<span lang="EN-US">GDP</span>数据时间序列，可以通过国家统计数据库（<span lang="EN-US"><a href="http://data.stats.gov.cn/workspace/index?m=hgjd">http://data.stats.gov.cn/workspace/index?m=hgjd</a></span>）进行查询。此外，国家统计局先后三次编辑出版了“中国季度国内生产总值核算历史资料”，其中最近出版的资料为《中国季度国内生产总值核算历史资料<span lang="EN-US">1992-2011</span>》<span lang="EN-US">(</span>国家统计局国民经济核算司编，中国统计出版社，<span lang="EN-US">2012</span>年<span lang="EN-US">5</span>月<span lang="EN-US">)</span>，该书汇总了<span lang="EN-US">1992-2011</span>年季度<span lang="EN-US">GDP</span>数据。</span></p><p class="MsoNormal"><span style="font-family: 楷体" lang="EN-US">&nbsp;</span></p></span></div></div></div>
+			</div>
+                        
+			<div class="center_wenzhang">
+				<div class="wenzhang_tit" id="hidden">
+					<font style="float:left;">
+						<img src="../../../images/b01.gif" style="float:left;margin-right:5px;" />相关附件
+					</font>
+				 </div>
+				<ul class="wenzhang_list">
+				  
+				  
+				</ul>
+            <script type="text/javascript">
+	  	var app = '';
+		if (app != ''){
+			document.getElementById("appendix").style.display = "block";
+		}else{
+		    document.getElementById("hidden").style.display="none";
+		}
+	  </script>
+			     </div>
+			<div class="center_wenzhang">
+				<div class="wenzhang_tit" id="hidden1">
+					<font style="float:left;">
+						<img src="../../../images/b01.gif" style="float:left;margin-right:5px;" />相关文章
+					</font>
+				 </div>
+				<ul class="wenzhang_list">
+				   
+				</ul>
+            <script type="text/javascript">
+	  	var doc = '';
+		if (doc != ''){
+			document.getElementById("relnews").style.display = "block";
+		}else{
+		    document.getElementById("hidden1").style.display="none";
+		}
+	  </script>
+			     </div>
+			</div>
+		
+		</div>
+		<div class="bottom">
+	<div class="bottom01">
+                   
+		<a href="../../../wzgl/201310/t20131022_445198.html"  target="_blank" ><ul class="bottom01_a">
+			<li><img src="../../../images/l.gif" /></li>
+			<li>联系我们</li>
+
+		</ul></a>                   
+                   
+		<a href="../../../wzgl/201310/t20131021_444713.html" target="_blank" ><ul class="bottom01_a">
+			<li><img src="../../../images/f.gif" /></li>
+			<li>服务条款</li>
+		</ul></a>
+                    
+		<a href="../../../wzgl/wzdt/" target="_blank" ><ul class="bottom01_a">
+			<li><img src="../../../images/w.gif" /></li>
+			<li>网站地图</li>
+		</ul></a>
+		<div style="width:700px; float:right;">
+                  <a href="http://microdata.stats.gov.cn" target="_blank">
+                <ul class="bottom01_a" style="margin-top:35px;">
+			<li style="font-weight:700;">微观数据申请</li>
+                        <li>wgsjsys@stats.gov.cn</li>
+		</ul></a>
+                   <ul class="bottom01_a" style="margin-top:35px;">
+			<li style="font-weight:700;"><font style="color:#6c6c6c">中国统计资料馆</font></li>
+			<li><a href="../../../tjfw/tjzlg/" target="_blank">简介</a>|<a href="http://www.stats.gov.cn/csl_appointment/" target="_blank">现场服务预约</a></li>
+		</ul>
+		<ul class="bottom01_a" style="margin-top:35px;">
+			<li style="font-weight:700;">数据咨询电话：</li>
+			<li>010-68576320</li>
+		</ul>
+		<ul class="bottom01_b" >
+		</ul>
+		</div>
+	</div>
+	<div class="bottom02" align="center">
+	<table width="600" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="50" align="right"><script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/60409131/CA330000000604091310003.js' type='text/javascript'%3E%3C/script%3E"));</script></td>
+    <td width="560" align="center"><font color="#FFFFFF">
+			版权所有：国家统计局<br />
+			地址：北京市西城区月坛南街57号（100826）<br />
+            <a href="https://beian.miit.gov.cn" style="color:#FFFFFF">京ICP备05034670号-2</a>&emsp;&emsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11040102700142"><img src="../../../images/gajgba.png" alt="" />&ensp;<font style="color:#fff;">京公网安备 11040102700142号<font></a><br>网站标识码bm36000002&emsp;&emsp;联系方式：010-68783311
+	  </font></td>
+    <td width="130" align="center"><script id="_jiucuo_" sitecode='bm36000002' src='http://pucha.kaipuyun.cn/exposure/jiucuo.js'></script>
+    </td>
+  </tr>
+</table>
+
+		
+
+	</div>
+</div>
+<noscript><img src="http://ta.trs.cn/c/1.gif?mpId=6&jsoff=1" style="border:0" alt="" /></noscript>
+<script>
+var _taq = _taq || [];
+_taq.home = 'http://ta.trs.cn/c';
+_taq.push(['_mpId', '6']);
+_taq.push(['_cli', '1']);
+(function(d, o, t) {
+    var ma = d.createElement(o); ma.async = true; ma.src = t;
+    var s = d.getElementsByTagName(o)[0]; s.parentNode.insertBefore(ma, s);
+})(document, 'script', 'http://ta.trs.cn/c/js/ta.js');
+</script>
+<script src="../../../images/esdToolsInit.js" type="text/javascript"></script>
+	
+</div>
+</body>
+</html>
