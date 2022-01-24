@@ -121,5 +121,5 @@ if __name__ == "__main__":
     gdp = gdp.round(1)
     gdp = gdp.drop(['year', 'quater'], axis=1)
     gdp.columns = ['_'.join(col).strip() for col in gdp.columns.values]  # flatten the multi-col index
-    gdp.to_csv('gdp.csv', index=True)
+    gdp.to_csv('./data/gdp.csv', index=True, index_label='季度')
     
