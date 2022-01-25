@@ -3,7 +3,6 @@
 # author @Qizhong Deng
 
 import pandas as pd
-import numpy as np
 import requests
 import re
 from datetime import datetime
@@ -17,18 +16,25 @@ pd.set_option('display.max_rows', None)
 
 
 def get_html(url, headers):
-    """Only get GDP urls for the time being"""
-    try:
-        response = requests.get(url, headers=headers)
+    schema = "http://www.stats.gov.cn/"
+    while True:
+        try:
+            response = requests.get(url, headers=headers)
 
-        if response.status_code == 200:
-            print("Get into the page successfully")
-            html = response.content.decode('utf-8-sig')
-            return html
+            if response.status_code == 200:
+                print("Get into the page successfully")
+                html = response.content.decode('utf-8-sig')
+                return html
 
-    except Exception as e:
-        print('Something goes wrong...', e)
-        return None
+        except requests.exceptions.MissingSchema as e:
+            print('Unvalid url:', e)
+            url = schema + url
+            print('Corrected to', url)
+            continue
+
+        except UnicodeError as e:
+            print('UnicodeError:', e)
+            return None
 
 
 def parse_search_page(html):
@@ -48,10 +54,10 @@ def parse_html(html):
 
     soup = bs(html, features='lxml')
     table = pd.read_html(html, index_col=0, na_values='…')[1]
-    table.columns = [table.iloc[0], table.iloc[1]]
+    table.columns = [table.iloc[1], table.iloc[2]]
 
     # take first two rows as multi-col index
-    table = table.iloc[2:].reset_index(drop=False)
+    table = table.iloc[3:].reset_index(drop=False)
     table.set_index(0, inplace=True)
 
     # extract release date
@@ -95,7 +101,6 @@ def parse_table(table, idx_map: dict):
             idx[i] = ix
 
     table.index = idx
-    print(table)
 
     # 重命名列
     try:
@@ -193,6 +198,7 @@ def main(page_num: int, bypass_pages: list=None):
     ua = UserAgent()
     headers = {'User-Agent': ua.random}
     search_page_url = 'http://www.stats.gov.cn/was5/web/search?page=1&channelid=288041&orderby=-DOCRELTIME&was_custom_expr=DOCTITLE%3D%28like%28%E5%B7%A5%E4%B8%9A%E5%A2%9E%E5%8A%A0%E5%80%BC%29%2Fsen%29&perpage=10&outlinepage=10'
+    schema = "http://www.stats.gov.cn/was5/web/"
     skip_pages = []
     
     for i in range(page_num):
@@ -201,17 +207,14 @@ def main(page_num: int, bypass_pages: list=None):
         print(f'Fetching urls in page {i + 1}...')
         search_page_html = get_html(search_page_url, headers)
         urllist, next_page_url = parse_search_page(search_page_html)
-        search_page_url = "http://www.stats.gov.cn/was5/web/" + next_page_url
+        search_page_url = schema + next_page_url
 
         # 跳过页面
         if bypass_pages and i + 1 in bypass_pages:
             print(f'Bypassing page {i + 1}')
             continue
 
-        for n, url in enumerate(urllist):
-
-            if url == 'http://www.stats.gov.cn/tjsj/zxfb/201803/t20180314_1587892.html':
-                continue
+        for n, url in enumerate(urllist[:2]):
 
             print(f'Page number: {n + 1}')
             table_html = get_html(url, headers)
@@ -235,7 +238,8 @@ def main(page_num: int, bypass_pages: list=None):
 
 
 if __name__ == "__main__":
-    # main(6, bypass_pages=[1, 2, 3, 4])
-    test()
+    bypass_pages = list(range(1, 11))
+    main(11, bypass_pages=bypass_pages)
+    # test()
 
     # test_html = get_html('http://www.stats.gov.cn/tjzs/tjbk/nsbzb/201402/P020140226559332052330.pdf', headers)
