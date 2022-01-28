@@ -53,12 +53,14 @@ def parse_html(html):
         return
 
     soup = bs(html, features='lxml')
-    table = pd.read_html(html, index_col=0, na_values='…')[1]
-    table.columns = [table.iloc[1], table.iloc[2]]
+    table = pd.read_html(html, index_col=1, na_values='…')[1]
+    table.columns = [table.iloc[0], table.iloc[1]]
 
     # take first two rows as multi-col index
-    table = table.iloc[3:].reset_index(drop=False)
-    table.set_index(0, inplace=True)
+    table = table.iloc[2:].reset_index(drop=False)
+    table.set_index(1, inplace=True)
+    table = table.iloc[:, 1:]
+    print(table)
 
     # extract release date
     title = soup.find('h2', class_='xilan_tit').get_text()
@@ -166,7 +168,7 @@ def test():
     ua = UserAgent()
     headers = {'User-Agent': ua.random}
     savepath = '../test_htmls/industry_html.txt'
-    url = 'http://www.stats.gov.cn/tjsj/zxfb/201708/t20170814_1522796.html'  # for testing
+    url = 'http://www.stats.gov.cn/tjsj/zxfb/201603/t20160312_1330113.html'  # for testing
     # html = get_html(url, headers=headers)
     # with open(savepath, 'w') as file:
         # file.write(html)
@@ -180,6 +182,8 @@ def test():
     except Exception as e:
         print('===Errors detected:', e)
         print(f'Skipping the page {title}')
+
+    output.to_csv('20160201.csv', index=False)
 
     print(output.T)
     
@@ -239,7 +243,9 @@ def main(page_num: int, bypass_pages: list=None):
 
 if __name__ == "__main__":
     bypass_pages = list(range(1, 11))
-    main(11, bypass_pages=bypass_pages)
-    # test()
+    # main(11, bypass_pages=bypass_pages)
+    test()
 
-    # test_html = get_html('http://www.stats.gov.cn/tjzs/tjbk/nsbzb/201402/P020140226559332052330.pdf', headers)
+    
+
+

@@ -4,7 +4,6 @@
 # Tested by: Python 3.8.6
 
 import pandas as pd
-import numpy as np
 
 from requests.packages.urllib3 import disable_warnings
 from playwright.sync_api import sync_playwright

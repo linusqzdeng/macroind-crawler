@@ -2,8 +2,9 @@ import pandas as pd
 import os
 
 
-file_path = os.listdir('./data/')
-file_path = [os.path.abspath('./data/' + file) for file in file_path if file.startswith('industry')]
+# file_path = os.listdir('./industry/')
+# file_path = [os.path.abspath('./industry/' + file) for file in file_path if file.endswith('.csv')]
+file_path = ['./data/addon_industry.csv', './data/fi_industry.csv']
 
 
 def merge_tables(merge_list):
@@ -22,7 +23,7 @@ def merge_tables(merge_list):
 
 if __name__ == "__main__":
     result = merge_tables(file_path)
-    result.to_csv('./data/fi_industry.csv', index=False)
+    result.to_csv('./data/industry.csv', index=False)
 
     # print(file_path)
 

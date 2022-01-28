@@ -1,51 +1,24 @@
 # -*- coding: UTF-8 -*-
 
+import pandas as pd
 import pymysql
-
-
-def connect_df():
-    conn = pymysql.connect(
-        host='localhost',
-        user='root',
-        passwd='root',
-        db='testdatabase',
-        charset='utf8'
-        )
-    cur = conn.cursor()
-    return conn, cur
-
-
-def exe_update(cur, query):
-    return cur.execute(query)
-    
+from sqlalchemy import create_engine
+from sqlalchemy.types import VARCHAR, FLOAT
 
 
 if __name__ == "__main__":
-    conn, cur = connect_df()
+    # create sqlalchemy engine
+    hostname = 'localhost'
+    db = 'macro'
+    user = 'root'
+    pwd = 'root'
+    charset='utf8'
+    engine = create_engine(f"mysql+pymysql://{user}:{pwd}@{hostname}/{db}?charset={charset}")
 
-    query = """
-        CREATE TABLE GDP (
-        截止时间                VARCHAR(10) NOT NULL,
-        公布日期                DATE,
-        公布时间                TIME,
-        国内生产总值_本季值	    FLOAT,
-        国内生产总值_累计值	    FLOAT,
-        国内生产总值_本季同比   FLOAT,
-        国内生产总值_累计同比	FLOAT,
-        第一产业_本季值			FLOAT,
-        第一产业_累计值			FLOAT,
-        第一产业_本季同比		FLOAT,
-        第一产业_累计同比		FLOAT,
-        第二产业_本季值			FLOAT,
-        第二产业_累计值			FLOAT,
-        第二产业_本季同比		FLOAT,
-        第二产业_累计同比		FLOAT,
-        第三产业_本季值			FLOAT,
-        第三产业_累计值			FLOAT,
-        第三产业_本季同比		FLOAT,
-        第三产业_累计同比		FLOAT
-        );
-    """
+    df = pd.read_csv('./data/industry.csv')
+    tbl_types = {col_name: FLOAT for col_name in df.columns}
+    tbl_types['公布日'] = VARCHAR(10)
+    tbl_types['截止日'] = VARCHAR(10)
+    df.to_sql('工业增加值', engine, if_exists='replace', index=False, dtype=tbl_types)
 
-    exe_update(cur, query)
     
