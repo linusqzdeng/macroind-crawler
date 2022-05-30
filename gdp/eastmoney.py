@@ -24,17 +24,18 @@ def get_html(url):
         page.goto(url)
         page.wait_for_timeout(3000)  # 等待网页加载
 
-        for i in range(4):
+        for i in range(1):
             try:
                 html = bs(page.content(), features='lxml')
                 print('Get into the website successfully!')
+                return html
 
                 # For testing
-                with open(f"./test_htmls/eastmoney_html{i}.txt", 'w') as file:
-                    file.write(html.prettify())
+                # with open(f"./test_htmls/eastmoney_html{i}.txt", 'w') as file:
+                #     file.write(html.prettify())
 
-                page.click("text=下一页")
-                page.wait_for_timeout(1000)  # 等待网页加载
+                # page.click("text=下一页")
+                # page.wait_for_timeout(1000)  # 等待网页加载
 
             except Exception as e:
                 print(e)
@@ -46,6 +47,7 @@ def get_html(url):
 def parse_html(html):
     """Extract tables from the html"""
     table = pd.read_html(html, header=[0, 1], index_col=0)[0]
+    print(table)
 
     # convert % object to float type
     for col in table.columns:
@@ -64,11 +66,6 @@ def rename_idx(idx):
     new_idx = year + 'Q' + quater
 
     return new_idx
-
-
-def my_pct_change(col: str):
-    """Customised percentage change func"""
-    pass
 
 
 if __name__ == "__main__":

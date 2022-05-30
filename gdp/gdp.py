@@ -17,6 +17,7 @@ def get_html(url, header):
             print("Get into the page successfully")
             html = response.content.decode('utf-8-sig')
             return html
+
     except Exception as e:
         print('Something goes wrong...', e)
         return None
@@ -63,7 +64,8 @@ def parse_html(html):
 
 
 def parse_table(table):
-    table.columns = ['Real GDP', 'YoY (%)']  # 绝对额（亿元）| 比上年同期增长（%）
+    # table.columns = ['Real GDP', 'YoY (%)']  # 绝对额（亿元）| 比上年同期增长（%）
+    table.columns = [1, 2, 3, 4]
     table = table.dropna(axis=0)  # 剔除空白行
     table = table.iloc[:-1]  # 不包括最后一行注释
     table = table.astype('float64')
@@ -85,10 +87,11 @@ if __name__ == "__main__":
 
     # ======= for testing ======= #
     # save_html(report_html)
-    with open("./test_htmls/report_html.txt", "r") as file:
-        report_html = file.read()
-
-    tables, title, dt = parse_html(report_html)
+    # with open("./test_htmls/report_html.txt", "r") as file:
+    #     report_html = file.read()
+    single_url = 'http://www.stats.gov.cn/tjsj/zxfb/202201/t20220118_1826497.html'
+    html = get_html(single_url, header)
+    tables, title, dt = parse_html(html)
     table = parse_table(tables)
 
     print(title)
